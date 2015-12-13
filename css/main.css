@@ -1,0 +1,117 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  color: #ffffff;
+  background-color: #e1e1e1;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container, .article {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article__list1 {
+  margin: 160px auto;
+}
+
+.article__list1__item {
+  width: 30%;
+  float: left;
+  margin-right: 3.33333%;
+  background: #ffffff;
+  border-radius: 4px 4px 0 0;
+}
+
+.article__list1__item__img {
+  overflow: hidden;
+  position: relative;
+}
+
+.article__list1__item__img p {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 0 4px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3078c0;
+  border-radius: 3px;
+}
+
+.article__list1__item__img a img {
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.article__list1__item__info {
+  padding: 24px;
+}
+
+.article__list1__item__info__title {
+  color: #3b3d40;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.article__list1__item__info__description {
+  margin-top: 8px;
+  color: #838d8f;
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.article__list1__item__tools {
+  height: 48px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  border-radius: 0 0 4px 4px;
+}
+
+.article__list1__item__tools__comments__ic {
+  vertical-align: middle;
+  padding-left: 18px;
+  background: url(../images/ic/ic-comments.svg) no-repeat 0 0;
+  color: #838d8f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.article__list1__item__tools__comments__num {
+  color: #838d8f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

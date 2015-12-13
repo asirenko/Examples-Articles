@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// This file contains Articles style.
+// -----------------------------------------------------------------------------
+
+.article
+	@extend .container
+
+	&__list1
+		margin: 160px auto
+		
+		&__item
+			width: 100 / $L * 288%
+			float: left
+			margin-right: 100 / $L * 32%
+
+			background: $white
+			border-radius: 4px 4px 0 0
+
+			&__img
+				overflow: hidden
+				position: relative
+				
+				p
+					position: absolute
+					top: 24px
+					left: 24px
+
+					padding: 0 4px
+
+					color: white
+					text-transform: uppercase
+					letter-spacing: $letter-spacing-base
+					font-family: $font-family-montserrat
+					font-size: $font-size-caption
+					font-weight: $font-weigh-700
+					line-height: $line-height-caption
+					+font-smoothing
+
+					background-color: $blue
+					border-radius: 3px
+
+				a img
+					border-radius: 4px 4px 0 0
+					width: 100%
+					height: auto
+
+			&__info
+				padding: 24px
+
+				&__title
+					color: $dark-blue
+					font-family: $font-family-montserrat
+					font-size: $font-size-h4
+					font-weight: $font-weigh-700
+					line-height: $line-height-h4
+
+				&__description
+					margin-top: 8px
+
+					color: $dark-cyan
+					font-family: $font-family-ptserif
+					font-size: $font-size-base
+					font-weight: $font-weight-400
+					line-height: $line-height-base
+
+			&__tools
+				height: 48px
+				padding: 24px
+
+				background-color: $white
+				border-top: 1px solid $light-gray
+				border-radius: 0 0 4px 4px
+
+				&__comments
+					//display: inline
+					//width: auto
+					//white-space: nowrap
+
+					&__ic
+						//width: 16px
+						//height: 16px
+						//display: inline-block
+						vertical-align: middle
+						padding-left: 18px
+						background: url(../images/ic/ic-comments.svg) no-repeat 0 0
+						
+						color: $dark-cyan
+						font-family: $font-family-montserrat
+						font-size: $font-size-button
+						font-weight: $font-weight-400
+						line-height: $line-height-button
+
+					&__num
+						color: $dark-cyan
+						font-family: $font-family-montserrat
+						font-size: $font-size-button
+						font-weight: $font-weight-400
+						line-height: $line-height-button
+
+
+
+
+
+
