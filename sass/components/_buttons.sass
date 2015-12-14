@@ -1,3 +1,32 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn
+	//border: 1px solid $light-gray
+	box-shadow: inset 0 0 0 1px $light-gray
+	border-radius: 100px
+	padding: 9px 16px
+
+
+	color: $dark-blue
+	font-family: $font-family-montserrat
+	font-size: $font-size-button
+	font-weight: $font-weigh-700
+	line-height: $line-height-button
+	letter-spacing: $letter-spacing-base
+	text-transform: uppercase
+	+font-smoothing
+
+	background: transparent
+	cursor: pointer
+	+transition(all .3s ease)
+
+	&:focus
+		outline: none
+
+	&:hover
+		box-shadow: inset 0 0 0 1px $dark-blue
+		color: $light-gray
+		background: $dark-blue
+
