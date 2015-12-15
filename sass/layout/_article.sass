@@ -7,19 +7,15 @@
 	padding-top: 160px
 
 .post1
-	float: left
-	width: 100 / $L * 288%
-	height: 336px
-
+	max-width: 100%
 	background: $white
 	border-radius: 4px
 
 	&__img
 		width: 100%
-		max-width: 320px
 		height: 144px
 		padding: 24px 0 0 24px
-		
+
 		border-radius: 4px 4px 0 0
 
 		background: url(../images/pic/pic1.png) no-repeat center center
@@ -39,6 +35,8 @@
 
 			background-color: $blue
 			border-radius: 3px
+	+MQ(M)
+		max-width: 320px
 
 	&__info
 		padding: 24px
@@ -88,7 +86,7 @@
 					margin-right: 8px
 					background: url(../images/ic/ic-comments.svg) no-repeat 0 0
 					vertical-align: middle
-			
+
 			&__likes a
 				margin-left: 16px
 
@@ -107,10 +105,15 @@
 					background: url(../images/ic/ic-comments.svg) no-repeat 0 0
 					vertical-align: middle
 
+	+MQ(M)
+		float: left
+		width: 100 / 960 * 288%
+
+
 .post2
-	float: right
-	width: 100 / $L * 640%
-	height: 336px
+	max-width: 100%
+
+	margin: 32px 0
 
 	background: $white
 	border-radius: 4px
@@ -153,12 +156,14 @@
 			line-height: $line-height-base
 			+font-smoothing
 
+		+MQ(M)
+			width: 100 / 640 * 320%
+
 	&__img
-		float: right
 		width: 100%
-		max-width: 320px
-		height: 100%
-		border-radius: 0 4px 4px 0
+		height: 144px
+
+		border-radius: 4px 4px 0 0
 
 		background: url(../images/pic/pic2.png) no-repeat center center
 		background-size: cover
@@ -170,113 +175,21 @@
 			height: 100%
 
 			background: $dark-blue
-			border-radius: 0 4px 4px 0
+			border-radius: 4px 4px 0 0
 			opacity: 0.5
 
+			+MQ(M)
+				border-radius: 0 4px 4px 0
 
+		+MQ(M)
+			float: right
+			height: 336px
+			width: 100 / 640 * 320%
 
+			border-radius: 0 4px 4px 0
 
-
-// .article
-// 	@extend .container
-
-// 	&__list1
-// 		margin: 160px auto
-		
-// 		&__item
-// 			width: 100 / $L * 288%
-// 			float: left
-// 			margin-right: 100 / $L * 32%
-
-// 			background: $white
-// 			border-radius: 4px 4px 0 0
-
-// 			&__img
-// 				overflow: hidden
-// 				position: relative
-				
-// 				p
-// 					position: absolute
-// 					top: 24px
-// 					left: 24px
-
-// 					padding: 0 4px
-
-// 					color: white
-// 					text-transform: uppercase
-// 					letter-spacing: $letter-spacing-base
-// 					font-family: $font-family-montserrat
-// 					font-size: $font-size-caption
-// 					font-weight: $font-weigh-700
-// 					line-height: $line-height-caption
-// 					+font-smoothing
-
-// 					background-color: $blue
-// 					border-radius: 3px
-
-// 				a img
-// 					border-radius: 4px 4px 0 0
-// 					width: 100%
-// 					height: auto
-
-// 			&__info
-// 				padding: 24px
-
-// 				&__title
-// 					color: $dark-blue
-// 					font-family: $font-family-montserrat
-// 					font-size: $font-size-h4
-// 					font-weight: $font-weigh-700
-// 					line-height: $line-height-h4
-
-// 				&__description
-// 					margin-top: 8px
-
-// 					color: $dark-cyan
-// 					font-family: $font-family-ptserif
-// 					font-size: $font-size-base
-// 					font-weight: $font-weight-400
-// 					line-height: $line-height-base
-
-// 			&__tools
-// 				height: 48px
-// 				padding: 24px
-
-// 				background-color: $white
-// 				border-top: 1px solid $light-gray
-// 				border-radius: 0 0 4px 4px
-
-// 				&__comments
-// 					//display: inline
-// 					//width: auto
-// 					//white-space: nowrap
-
-// 					&__ic
-// 						//width: 16px
-// 						//height: 16px
-// 						//display: inline-block
-// 						vertical-align: middle
-// 						padding-left: 18px
-// 						background: url(../images/ic/ic-comments.svg) no-repeat 0 0
-						
-// 						color: $dark-cyan
-// 						font-family: $font-family-montserrat
-// 						font-size: $font-size-button
-// 						font-weight: $font-weight-400
-// 						line-height: $line-height-button
-
-// 					&__num
-// 						color: $dark-cyan
-// 						font-family: $font-family-montserrat
-// 						font-size: $font-size-button
-// 						font-weight: $font-weight-400
-// 						line-height: $line-height-button
-
-// 	&__list2__item
-
-
-
-
-
-
+	+MQ(M)
+		float: right
+		width: 100 / 960 * 640%
+		margin: 0 0
 
